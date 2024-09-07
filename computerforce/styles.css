@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E3A5F;
+    color: #BCC6CC;
+}
+
+
+header {
+    background-color: #2D6A9F;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+
+nav {
+    background-color: #1E3A5F;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #BCC6CC;
+}
+
+.search input {
+    padding: 5px;
+    border: 1px solid #BCC6CC;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 5px 10px;
+    background-color: #2D6A9F;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search button:hover {
+    background-color: #1E3A5F;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+main {
+    background-color: #2D6A9F;
+    padding: 20px;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+aside {
+    background-color: #BCC6CC;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+aside h2 {
+    color: #1E3A5F;
+    margin-bottom: 10px;
+}
+
+aside table {
+    width: 100%;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    color: #1E3A5F;
+}
+
+aside table th,
+aside table td {
+    padding: 8px;
+    text-align: left;
+}
+
+aside button {
+    padding: 10px 15px;
+    background-color: #1E3A5F;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+aside button:hover {
+    background-color: #2D6A9F;
+}
+
+footer {
+    background-color: #1E3A5F;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #BCC6CC;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    aside {
+        order: -1;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+
